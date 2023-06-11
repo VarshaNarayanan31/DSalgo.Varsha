@@ -17,7 +17,7 @@ import utilities.LoggerLoad;
 			Driversetup.getDriver();
 			Driversetup.setUpDriver();
 	     
-	     //Helper.setUpDriver();
+	    
 	    }
 
 	    @After

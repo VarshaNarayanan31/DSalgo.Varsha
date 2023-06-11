@@ -7,10 +7,11 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features={"src/test/resources/features"},glue ={"stepdefinition","allHooks"},
                  monochrome=true,
-                		 dryRun=false,
+                		// dryRun=false,
 plugin= {"pretty","html:target/cucumber.html" ,
 		//"json:target/Ds-algo.json",
-		//"rerun:target/rerun.txt"  ,//mandatory for capture failures 
+		//"rerun:target/rerun.txt"  ,
+		"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 		}
 ,tags="@1 or @2 or @3 or @4 or @5 or @6 or @7 or @8 or @9")

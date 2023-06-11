@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,7 +23,7 @@ import utilities.LoggerLoad;
 
 public class Registration extends Base {
 	WebDriver driver;
-String excelpath = ".\\src\\test\\resources\\ExcelData\\registerpage2 (1).xlsx";
+String excelpath = ".\\src\\test\\resources\\ExcelData\\Registrationdata1.xlsx";
        
     String expmsg = "";
 	int rowval = 0;
@@ -80,7 +81,7 @@ String excelpath = ".\\src\\test\\resources\\ExcelData\\registerpage2 (1).xlsx";
 
 			actmsg = login.alertdismsg();
 			System.out.print(actmsg);
-			// Assert.assertEquals(actmsg, expmsg);
+			//Assert.assertEquals(actmsg, expmsg);
 			login.signoutclk();
 			login.alertdismsg();
 			login.clkSignIn();
